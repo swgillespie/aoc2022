@@ -1,17 +1,4 @@
-int
-gets();
-
-int
-puts();
-
-int
-strlen();
-
-int
-printf();
-
-int
-atoi();
+#include "aoc.h"
 
 int
 main()

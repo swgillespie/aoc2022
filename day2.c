@@ -1,9 +1,4 @@
-int
-gets();
-int
-strtok();
-int
-printf();
+#include "aoc.h"
 
 int
 main()

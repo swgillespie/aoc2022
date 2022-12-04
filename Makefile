@@ -12,7 +12,7 @@ all: $(PROGRAMS)
 %: %.c
 
 %.preproc.c: %.c
-	$(CPP) -E -P $< > $@
+	$(CPP) -D__SCC__=1 -E -P $< > $@
 
 %.s: %.preproc.c
 	$(CC) $< > $@
