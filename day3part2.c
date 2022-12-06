@@ -60,9 +60,9 @@ main()
   char two_buf[256];
   char three_buf[256];
   int score = 0;
-  while (gets(one_buf) != 0) {
-    gets(two_buf);
-    gets(three_buf);
+  while (fgets(one_buf, 256, stdin) != 0) {
+    fgets(two_buf, 256, stdin);
+    fgets(three_buf, 256, stdin);
     score = score + score_input(one_buf, two_buf, three_buf);
   }
 

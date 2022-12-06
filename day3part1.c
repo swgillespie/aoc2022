@@ -37,7 +37,7 @@ main()
 {
   char buffer[256];
   int score = 0;
-  while (gets(buffer) != 0) {
+  while (fgets(buffer, 256, stdin) != 0) {
     score = score + score_input(buffer);
   }
 

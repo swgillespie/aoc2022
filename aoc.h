@@ -2,8 +2,11 @@
 #define __AOC_H__
 
 #ifdef __SCC__
+
+extern void* stdin;
+
 char*
-gets(char* str);
+fgets(char* s, int size, void* stream);
 
 int
 puts(char* str);

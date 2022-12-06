@@ -5,7 +5,7 @@ main()
 {
   char buffer[10];
   int score = 0;
-  while (gets(buffer) != 0) {
+  while (fgets(buffer, 10, stdin) != 0) {
     char them = buffer[0];
     char us = buffer[2];
     if (us == 'Y') {

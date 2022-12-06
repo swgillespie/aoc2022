@@ -7,7 +7,7 @@ main()
   int elves[400];
   int count = 0;
   elves[0] = 0;
-  while (gets(buffer) != 0) {
+  while (fgets(buffer, 10, stdin) != 0) {
     if (strlen(buffer) == 0) {
       count++;
       elves[count] = 0;
