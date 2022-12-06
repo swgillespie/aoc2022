@@ -22,6 +22,10 @@ atoi(char* str);
 
 void
 memset(void* s, int c, int n);
+
+int
+sscanf(char* str, char* format, ...);
+
 #else
 #include <stdio.h>
 #include <stdlib.h>
