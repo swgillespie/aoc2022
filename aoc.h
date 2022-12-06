@@ -16,8 +16,13 @@ printf(char* format, ...);
 
 int
 atoi(char* str);
+
+void
+memset(void* s, int c, int n);
 #else
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #endif
 
 #endif /* __AOC_H__ */
