@@ -4,6 +4,7 @@
 #ifdef __SCC__
 
 extern void* stdin;
+extern void* stdout;
 
 char*
 fgets(char* s, int size, void* stream);
@@ -25,6 +26,12 @@ memset(void* s, int c, int n);
 
 int
 sscanf(char* str, char* format, ...);
+
+int
+fputc(int c, void* stream);
+
+void*
+memcpy(void* dest, void* str, int n);
 
 #else
 #include <stdio.h>
